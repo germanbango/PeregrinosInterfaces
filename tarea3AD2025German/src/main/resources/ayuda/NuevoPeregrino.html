@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Registro de Peregrinos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .step {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .step:before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: #3498db;
+        }
+        .important {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro de Peregrinos</h1>
+    
+    <div class="section">
+        <h2>¿Qué hace este formulario?</h2>
+        <p>Permite registrar nuevos peregrinos en el sistema, creando:</p>
+        <div class="step">Una cuenta de usuario con nombre y contraseña</div>
+        <div class="step">Un perfil personal con nacionalidad y datos básicos</div>
+        <div class="step">Un carnet de peregrino asociado a una parada inicial</div>
+    </div>
+
+    <div class="section">
+        <h2>Instrucciones de Uso</h2>
+        
+        <h3>1. Completar los campos</h3>
+        <div class="step"><strong>Parada Inicial:</strong> Selecciona una parada de inicio del Camino</div>
+        <div class="step"><strong>Nombre Completo:</strong> Escribe tu nombre real completo</div>
+        <div class="step"><strong>Nacionalidad:</strong> Elige tu país de origen</div>
+        <div class="step"><strong>Usuario:</strong> Crea un nombre de usuario (sin espacios)</div>
+        <div class="step"><strong>Contraseña:</strong> Establece una contraseña (sin espacios)</div>
+
+        <h3>2. Botones disponibles</h3>
+        <div class="step"><strong>Registrar:</strong> Guarda tus datos y crea tu cuenta</div>
+        <div class="step"><strong>Salir:</strong> Cancela el registro y vuelve al inicio</div>
+    </div>
+
+    <div class="section">
+        <h2>Requisitos y Validaciones</h2>
+        <div class="step important">Todos los campos son obligatorios</div>
+        <div class="step important">Usuario y contraseña no pueden contener espacios</div>
+        <div class="step important">El nombre de usuario debe ser único</div>
+        <div class="step important">Debes seleccionar una parada y nacionalidad</div>
+    </div>
+
+    <div class="section">
+        <h2>¿Qué ocurre al registrar?</h2>
+        <div class="step">Recibirás un carnet de peregrino virtual</div>
+        <div class="step">Podrás iniciar sesión con tus credenciales</div>
+        <div class="step">Quedarás registrado en la parada inicial seleccionada</div>
+        <div class="step">Tendrás acceso a funciones básicas de peregrino</div>
+    </div>
+</body>
+</html>

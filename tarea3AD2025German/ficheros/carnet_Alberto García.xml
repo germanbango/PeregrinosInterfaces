@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<carnet>
+    <id>3</id>
+    <fechaexp>2025-06-06</fechaexp>
+    <expedidoen>gijon</expedidoen>
+    <peregrino>
+        <nombre>Alberto García</nombre>
+        <nacionalidad>Japón</nacionalidad>
+    </peregrino>
+    <hoy>2025-06-10</hoy>
+    <distanciatotal>5.0</distanciatotal>
+    <paradas>
+        <parada>
+            <orden>1</orden>
+            <nombre>gijon</nombre>
+            <region>A</region>
+        </parada>
+        <parada>
+            <orden>2</orden>
+            <nombre>oviedo</nombre>
+            <region>A</region>
+        </parada>
+    </paradas>
+    <estancias>
+        <estancia>
+            <id>2</id>
+            <fecha>2025-06-10T16:38:53</fecha>
+            <parada>gijon</parada>
+            <vip/>
+        </estancia>
+        <estancia>
+            <id>4</id>
+            <fecha>2025-06-10T16:44:10</fecha>
+            <parada>oviedo</parada>
+            <vip/>
+        </estancia>
+    </estancias>
+</carnet>

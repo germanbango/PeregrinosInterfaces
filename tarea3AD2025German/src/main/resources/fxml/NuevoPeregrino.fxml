@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="594.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.german.tarea3AD2024base.controller.NuevoPeregrinoController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="452.0" prefWidth="594.0" spacing="20.0" styleClass="background" BorderPane.alignment="CENTER">
+         <children>
+            <Label style="-fx-font-weight: bold;" styleClass="header-label" text="Registro de Nuevo Peregrino" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label minWidth="150.0" text="Parada Inicial:" textFill="#f8f7f7">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbParadas" prefHeight="30.0" prefWidth="228.0" promptText="Seleccione parada inicial" styleClass="combo-box">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#1965d0" />
+                     </effect>
+                  </ComboBox>
+               </children>
+            </HBox>
+            
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label minWidth="150.0" text="Nombre Completo:" textFill="#f8f7f7">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNombrePeregrino" prefHeight="32.0" prefWidth="228.0" promptText="Introduzca su nombre" styleClass="text-field">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#1965d0" />
+                     </effect>
+                  </TextField>
+               </children>
+            </HBox>
+            
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label minWidth="150.0" text="Nacionalidad:" textFill="#f8f7f7">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbNacionalidad" prefHeight="31.0" prefWidth="228.0" promptText="Seleccione parada inicial" styleClass="combo-box">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#1965d0" />
+                     </effect>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="50.0" layoutY="205.0" spacing="10.0">
+               <children>
+                  <Label minWidth="150.0" text="Usuario:" textFill="#f8f7f7">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUsuario" prefHeight="25.0" prefWidth="228.0" promptText="Introduzca su usuario(sin espacios)" styleClass="text-field">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#1965d0" />
+                     </effect>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="50.0" layoutY="231.0" spacing="10.0">
+               <children>
+                  <Label minWidth="150.0" text="Contraseña:" textFill="#f8f7f7">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtContrasena" prefHeight="32.0" prefWidth="228.0" promptText="Introduzca la contrasena(sin espacios)" />
+               </children>
+            </HBox>
+            
+            <HBox fillHeight="false" prefHeight="38.0" prefWidth="474.0" scaleShape="false" spacing="20.0">
+               <children>
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="42.0" prefWidth="267.0" scaleShape="false">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="89.0" style="-fx-background-color: #FF6666; -fx-font-weight: Bold;" text="Salir" onAction="#salir" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_RIGHT" prefHeight="460.0" prefWidth="102.0" scaleShape="false">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="89.0" style="-fx-background-color: #3cbc53; -fx-font-weight: Bold;" text="Guardar" onAction="#GuardarPeregrino" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="40.0" left="80.0" right="40.0" top="40.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="itemAyuda" mnemonicParsing="false" onAction="#mostrarAyuda" text="Ayuda" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

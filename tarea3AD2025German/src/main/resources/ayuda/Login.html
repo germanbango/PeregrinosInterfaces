@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Ventana de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .step {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .important {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ventana de Inicio de Sesión</h1>
+    
+    <h2>Función Principal</h2>
+    <p>Autentica usuarios y los redirige según su rol:</p>
+    <ul>
+        <li><strong>Administrador:</strong> Crear una parada nueva</li>
+        <li><strong>Responsable:</strong> gestión de las paradas</li>
+        <li><strong>Peregrino:</strong> editar datos y exportar el carnet</li>
+    </ul>
+
+    <h2>Instrucciones de Uso</h2>
+    
+    <div class="step">
+        <h3>1. Ingresar Credenciales</h3>
+        <p><strong>Campo superior:</strong> Escribe tu nombre de usuario o email</p>
+        <p><strong>Campo inferior:</strong> Introduce tu contraseña (se muestra oculta)</p>
+        <p class="important">Presiona Enter en el campo de contraseña para iniciar sesión rápidamente</p>
+    </div>
+
+    <div class="step">
+        <h3>2. Botones Disponibles</h3>
+        <p><strong>Iniciar Sesión:</strong> Valida tus datos y accede al sistema</p>
+        <p><strong>Registrar Peregrino:</strong> Abre el formulario para nuevos usuarios</p>
+    </div>
+
+    <div class="step">
+        <h3>3. Comportamiento del Sistema</h3>
+        <ul>
+            <li>Credenciales correctas → Redirección automática al menú correspondiente</li>
+            <li>Credenciales incorrectas → Muestra mensaje de error</li>
+        </ul>
+    </div>
+
+</body>
+</html>

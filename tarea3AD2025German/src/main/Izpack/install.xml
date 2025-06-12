@@ -1,0 +1,21 @@
+<installation version="5.0">
+    <info>
+        <appname>Peregrinos</appname>
+        <appversion>1.0</appversion>
+    </info>
+    <locale>
+        <langpack iso3="spa"/>
+    </locale>
+    <guiprefs width="800" height="600" resizable="yes" lookandfeel="metal"/>
+    <panels>
+        <panel classname="HelloPanel"/>
+        <panel classname="InstallPanel"/>
+        <panel classname="FinishPanel"/>
+    </panels>
+    <packs>
+        <pack name="Aplicación principal" required="yes">
+            <description>Paquete principal de la aplicación Peregrinos</description>
+            <fileset dir="${basedir}/src/main/resources" targetdir="$INSTALL_PATH"/>
+        </pack>
+    </packs>
+</installation>

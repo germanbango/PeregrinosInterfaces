@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guía - Menú de Peregrino</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      color: #333;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #2e6da4;
+    }
+    ul {
+      list-style-type: square;
+    }
+    .menu {
+      background: #e1ecf4;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-left: 4px solid #2e6da4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Guía de Usuario</h1>
+  <h2>Ventana: Menú de Peregrino</h2>
+
+  <p>Esta ventana permite al usuario peregrino gestionar su carnet, modificar su información personal, y cerrar sesión.</p>
+
+  <div class="menu">
+    <h3>Menú: <strong>Gestión</strong></h3>
+    <ul>
+      <li>
+        <strong>Exportar carnet</strong> (<kbd>Ctrl+E</kbd>)  
+        <br>Genera un informe PDF del carnet del peregrino y lo guarda también como fichero XML en la carpeta <code>ficheros/</code>.
+        <ul>
+          <li>El informe PDF se muestra con JasperViewer.</li>
+          <li>El archivo XML incluye datos del carnet, peregrino, paradas y estancias.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Modificar Peregrino</strong> (<kbd>Ctrl+M</kbd>)  
+        <br>Abre una ventana para modificar los datos del usuario peregrino actual (nombre, nacionalidad, etc.).
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="menu">
+    <h3>Menú: <strong>Salir</strong></h3>
+    <ul>
+      <li>
+        <strong>Cerrar Sesión</strong> (<kbd>Ctrl+S</kbd>)  
+        <br>Finaliza la sesión actual del usuario y redirige a la pantalla de inicio de sesión.
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

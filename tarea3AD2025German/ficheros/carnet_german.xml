@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<carnet>
+    <id>1</id>
+    <fechaexp>2025-06-11</fechaexp>
+    <expedidoen>gijon</expedidoen>
+    <peregrino>
+        <nombre>german</nombre>
+        <nacionalidad>Dinamarca</nacionalidad>
+    </peregrino>
+    <hoy>2025-06-11</hoy>
+    <distanciatotal>5.0</distanciatotal>
+    <paradas>
+        <parada>
+            <orden>1</orden>
+            <nombre>gijon</nombre>
+            <region>A</region>
+        </parada>
+        <parada>
+            <orden>2</orden>
+            <nombre>oviedo</nombre>
+            <region>A</region>
+        </parada>
+    </paradas>
+    <estancias>
+        <estancia>
+            <id>1</id>
+            <fecha>2025-06-11T12:54:27</fecha>
+            <parada>oviedo</parada>
+        </estancia>
+        <estancia>
+            <id>2</id>
+            <fecha>2025-06-11T12:54:46</fecha>
+            <parada>gijon</parada>
+            <vip/>
+        </estancia>
+    </estancias>
+</carnet>

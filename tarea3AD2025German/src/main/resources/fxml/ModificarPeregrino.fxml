@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="381.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.german.tarea3AD2024base.controller.ModificarPeregrinoController">
+   <children>
+      <MenuBar prefHeight="18.0" prefWidth="499.0">
+        <menus>
+          <Menu fx:id="itemAyuda" mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="itemAyuda" mnemonicParsing="false" onAction="#mostrarAyuda" text="Ayuda" />
+            </items>
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label style="-fx-font-weight: bold;" text="Modificar Datos" textFill="DODGERBLUE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="156.0" prefWidth="534.0">
+         <children>
+            <VBox prefHeight="132.0" prefWidth="246.0">
+               <children>
+                  <Label text="Nombre:">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNombre" prefHeight="32.0" prefWidth="231.0" promptText="introduzca su nombre">
+                     <VBox.margin>
+                        <Insets bottom="20.0" right="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Contrasena:">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtContrasena" prefHeight="32.0" prefWidth="231.0" promptText="contrasena nueva(sin espacios)">
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                  </PasswordField>
+               </children>
+            </VBox>
+            <VBox prefHeight="132.0" prefWidth="250.0">
+               <children>
+                  <Label text="Usuario:">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUsuario" prefHeight="32.0" promptText="usuario nuevo(sin espacios)">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Nacionalidad:">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="txtNacionaldiad" prefHeight="32.0" prefWidth="253.0" />
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="59.0" prefWidth="439.0">
+         <children>
+            <VBox prefHeight="59.0" prefWidth="267.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#modificarDatos" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #3cbc53; -fx-font-weight: bold;" text="Guardar" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" prefHeight="48.0" prefWidth="247.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #FF6666; -fx-font-weight: bold;" text="Cancelar" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="40.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

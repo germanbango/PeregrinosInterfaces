@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cómo usar la ventana Sellar/Alojarse</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 650px;
+    margin: 40px auto;
+    color: #333;
+    line-height: 1.5;
+  }
+  h1 {
+    color: #1E90FF;
+    text-align: center;
+  }
+  h2 {
+    color: #1E90FF;
+    margin-top: 30px;
+  }
+  ul {
+    margin-left: 20px;
+  }
+  p {
+    margin-top: 10px;
+  }
+  .important {
+    font-weight: bold;
+    color: #007BFF;
+  }
+  .note {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Cómo usar la ventana Sellar/Alojarse</h1>
+
+<p>Esta ventana te permite registrar la estancia de un peregrino en tu parada. Puedes sellar y alojar a un peregrino y seleccionar el tipo de estancia que corresponde.</p>
+
+<h2>Pasos para sellar o alojar a un peregrino:</h2>
+<ol>
+  <li><strong>Selecciona el nombre del peregrino:</strong><br />
+      En el menú desplegable <span class="important">"Nombre del Peregrino"</span>, elige el peregrino que deseas registrar.</li>
+  <li><strong>Elige el tipo de estancia (opcional):</strong><br />
+      Puedes seleccionar <span class="important">Estancia Normal</span> o <span class="important">Estancia VIP</span>. <br />
+      <span class="note">Nota: Solo puedes seleccionar una opción a la vez. Si no seleccionas ninguna, se registrará la visita sin tipo específico.</span>
+  </li>
+  <li><strong>Confirma el registro:</strong><br />
+      Haz clic en el botón <span class="important">Confirmar</span> para guardar la estancia.</li>
+  <li><strong>Salir de la ventana:</strong><br />
+      Si deseas cancelar o salir, presiona el botón <span class="important">Salir</span>.</li>
+</ol>
+
+<h2>Qué sucede al confirmar:</h2>
+<ul>
+  <li>Se guarda la estancia con la fecha y hora actuales.</li>
+  <li>Si la estancia es VIP, se incrementa el contador de estancias VIP en el carnet del peregrino.</li>
+  <li>Se registra la relación entre el peregrino y la parada actual.</li>
+  <li>Se muestra una alerta confirmando el tipo de estancia guardada o un error si seleccionaste ambas opciones.</li>
+</ul>
+
+<h2>Errores comunes:</h2>
+<ul>
+  <li>Seleccionar ambas opciones de estancia (Normal y VIP) simultáneamente no está permitido.</li>
+  <li>No seleccionar ningún peregrino antes de confirmar puede impedir el registro.</li>
+</ul>
+
+<p>Utiliza esta ventana para gestionar correctamente la estancia de los peregrinos y llevar un control actualizado en la aplicación.</p>
+
+</body>
+</html>

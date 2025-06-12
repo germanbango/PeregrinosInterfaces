@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.4.0</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.german</groupId>
+    <artifactId>tarea3AD2025German</artifactId>
+    <packaging>izpack-jar</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>tarea3AD2025German</name>
+    <description>Proyecto base para AD German</description>
+    
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>21</java.version>
+        <!-- Ruta a librerías JavaFX (ajusta según tu entorno si usas modularidad) -->
+        <javafx.lib.path>${java.home}/lib</javafx.lib.path> 
+           <staging.dir>${project.build.directory}/staging</staging.dir>
+    <info.appName>Peregrinos</info.appName>
+    <info.appsubpath>my-killer-app/standard</info.appsubpath>
+    <izpack.dir.app>${basedir}/src/main/izpack</izpack.dir.app>
+    <staging.dir.app>${staging.dir}/appfiles</staging.dir.app>
+    </properties>
+
+    <dependencies>
+        <!-- Spring Boot y MySQL -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JavaFX -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>23</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>23</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
+            <version>23</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>23</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JasperReports -->
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>7.0.1</version>
+        </dependency>
+
+<!--         Mockito -->
+<!--        <dependency>-->
+<!--            <groupId>org.mockito</groupId>-->
+<!--            <artifactId>mockito-core</artifactId>-->
+<!--            <version>5.12.0</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.mockito</groupId>-->
+<!--            <artifactId>mockito-junit-jupiter</artifactId>-->
+<!--            <version>5.12.0</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+<!--         Jackson -->
+<!--        <dependency>-->
+<!--            <groupId>com.fasterxml.jackson.core</groupId>-->
+<!--            <artifactId>jackson-databind</artifactId>-->
+<!--            <version>2.17.1</version>-->
+<!--        </dependency>-->
+
+        <!-- TestFX -->
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-core</artifactId>
+            <version>4.0.18</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-junit5</artifactId>
+            <version>4.0.18</version>
+            <scope>test</scope>
+        </dependency>
+        
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Spring Boot Maven plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+        <skip>true</skip>
+    </configuration>
+            </plugin>
+
+            <!-- JavaFX Maven plugin -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <executions>
+                    <execution>
+                        <id>default-cli</id>
+                        <configuration>
+                            <mainClass>com.german.tarea3AD2024base.Tarea3Ad2024baseApplication</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>debug</id>
+                        <configuration>
+                            <options>
+                                <option>-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:8001</option>
+                            </options>
+                            <mainClass>com.german.tarea3AD2024base.Tarea3Ad2024baseApplication</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+<!--             Maven Compiler Plugin con args para JavaFX -->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.11.0</version>-->
+<!--                <configuration>-->
+<!--                    <source>${java.version}</source>-->
+<!--                    <target>${java.version}</target>-->
+<!--                    <compilerArgs>-->
+<!--                        <arg>add-modules</arg>-->
+<!--                        <arg>javafx.controls,javafx.fxml,javafx.swing</arg>-->
+<!--                    </compilerArgs>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
+  <plugin>
+    <groupId>org.codehaus.izpack</groupId>
+    <artifactId>izpack-maven-plugin</artifactId>
+    <version>5.1.3</version> 
+    <extensions>true</extensions>
+    <configuration>
+      <baseDir>${staging.dir.app}</baseDir>
+      <installFile>${izpack.dir.app}/install.xml</installFile>
+      <outputDirectory>${project.build.directory}</outputDirectory>
+      <finalName>${project.build.finalName}</finalName>
+      <mkdirs>true</mkdirs>
+      <autoIncludeUrl>false</autoIncludeUrl>
+      <autoIncludeDevelopers>false</autoIncludeDevelopers>
+    </configuration>
+  </plugin>
+  
+        </plugins>
+    </build>
+
+</project>

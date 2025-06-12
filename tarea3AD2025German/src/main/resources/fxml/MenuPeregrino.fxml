@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.german.tarea3AD2024base.controller.MenuPeregrinoController">
+   <children>
+      <MenuBar fx:id="menubarPeregrino">
+        <menus>
+          <Menu fx:id="menuGestion" mnemonicParsing="false" text="Gestion">
+            <items>
+              <MenuItem fx:id="menuitemExportarCarnet" mnemonicParsing="false" onAction="#generarInformeYXml" text=" Exportar carnet" />
+                  <MenuItem fx:id="menuItemModificarPeregrino" mnemonicParsing="false" onAction="#abrirModificarPeregrino" text="Modificar peregrino" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="itemAyuda" mnemonicParsing="false" onAction="#mostrarAyuda" text="Ayuda" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Salir">
+            <items>
+              <MenuItem fx:id="itemMenuSalir" mnemonicParsing="false" onAction="#cerrarSesion" text="Cerrar Sesion" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</VBox>

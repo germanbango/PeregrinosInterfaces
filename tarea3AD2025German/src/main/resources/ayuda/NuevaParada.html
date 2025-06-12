@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ayuda - Nueva Parada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #1E90FF;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #1E90FF;
+      margin-top: 25px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    .important {
+      font-weight: bold;
+      color: #007BFF;
+    }
+    .warning {
+      color: #D9534F;
+      font-weight: bold;
+    }
+    .note {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Cómo usar la ventana "Nueva Parada"</h1>
+
+<p>Esta ventana te permite registrar una nueva parada en el sistema, asignando un responsable y asegurando que los datos sean únicos y válidos.</p>
+
+<h2>Campos obligatorios</h2>
+<ol>
+  <li><strong>Nombre Parada:</strong><br>
+    Escribe el nombre de la parada. <br>
+    <span class="warning">No puede estar vacío y no puede repetirse en la misma región.</span>
+  </li>
+
+  <li><strong>Región (una sola letra):</strong><br>
+    Especifica la región donde está la parada, usando una sola letra (por ejemplo, A, B, C...).<br>
+    <span class="warning">Debe ser exactamente una letra del alfabeto.</span>
+  </li>
+
+  <li><strong>Nombre del Responsable:</strong><br>
+    Escribe el nombre completo de la persona responsable de la parada.
+  </li>
+
+  <li><strong>Usuario del Responsable:</strong><br>
+    Elige un nombre de usuario único para el responsable.<br>
+    <span class="warning">Debe escribirse sin espacios y no puede estar ya registrado.</span>
+  </li>
+
+  <li><strong>Contraseña del Responsable:</strong><br>
+    Escribe la contraseña para ese usuario.<br>
+    <span class="warning">No puede contener espacios y no puede estar vacía.</span>
+  </li>
+</ol>
+
+<h2>Botones disponibles</h2>
+<ul>
+  <li><strong>Guardar:</strong> Valida los datos y, si todo está correcto, crea la parada junto a su responsable.</li>
+  <li><strong>Borrar:</strong> Limpia todos los campos del formulario para empezar desde cero.</li>
+  <li><strong>Logout:</strong> Cierra la sesión del usuario actual y vuelve a la pantalla de inicio.</li>
+</ul>
+
+<h2>Tabla de Paradas Registradas</h2>
+<p>En la parte derecha de la ventana puedes ver una tabla con todas las paradas registradas hasta ahora. La tabla incluye:</p>
+<ul>
+  <li><strong>ID:</strong> Identificador único de la parada.</li>
+  <li><strong>Parada:</strong> Nombre de la parada.</li>
+  <li><strong>Región:</strong> Letra que representa la región.</li>
+  <li><strong>Responsable:</strong> Nombre de la persona responsable.</li>
+</ul>
+
+<h2>Validaciones importantes</h2>
+<ul>
+  <li>No puedes registrar una parada con un nombre y región que ya existan.</li>
+  <li>El nombre de usuario del responsable debe ser único en el sistema.</li>
+  <li>Las contraseñas no pueden tener espacios.</li>
+</ul>
+
+<p class="note">Si algún dato no es válido, se mostrará un mensaje de advertencia para ayudarte a corregirlo antes de continuar.</p>
+
+</body>
+</html>
