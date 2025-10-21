@@ -18,7 +18,7 @@ public class Tarea3Ad2024baseApplication extends Application {
 
 	@Override
 	public void init() throws Exception {
-		springContext = springBootApplicationContext();
+		 springContext = springBootApplicationContext();
 	}
 
 	public static void main(final String[] args) {
