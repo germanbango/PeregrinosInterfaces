@@ -19,7 +19,6 @@ import com.german.tarea3AD2024base.modelo.User;
 import com.german.tarea3AD2024base.services.UserService;
 import com.german.tarea3AD2024base.utiles.Sesion;
 
-import javafx.embed.swing.JFXPanel;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -36,11 +35,7 @@ public class LoginControllerTest {
     private LoginController loginController;
 
 
-    @BeforeAll
-    public static void initToolkit() {
-        new JFXPanel(); // inicializa JavaFX toolkit
-    }
-    
+  
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
